@@ -25,18 +25,22 @@
     </header>
     <main>
         <section class="formulario">
-            <h2>Formulario de Contacto</h2>
-            <form action="/enviar-formulario" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="email">Correo Electrónico:</label>
+            <h2><span class="lang-es">Formulario de Contacto</span><span class="lang-en" style="display:none;">Contact Form</span></h2>
+            <form action="/send-form" method="POST">
+                <label for="name" class="lang-es">Nombre:</label><label for="name" class="lang-en" style="display:none;">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email" class="lang-es">Correo Electrónico:</label><label for="email" class="lang-en" style="display:none;">Email:</label>
                 <input type="email" id="email" name="email" required>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                <button type="submit">Enviar</button>
+                
+                <label for="message" class="lang-es">Mensaje:</label><label for="message" class="lang-en" style="display:none;">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="lang-es">Enviar</button><button type="submit" class="lang-en" style="display:none;">Send</button>
             </form>
         </section>
     </main>
+
     <footer class="footer">
         <p>© 2025 Clínica Dental E. Todos los derechos reservados.</p>
         <p>Contacto: <a href="mailto:info@clinicadentale.com">info@clinicadentale.com</a> | Tel: +34 123 456 789</p>
@@ -47,6 +51,6 @@
         </div>
     </footer>
     
-    
+    <script src="script.js"></script>
 </body>
 </html>
